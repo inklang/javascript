@@ -1,0 +1,9 @@
+{
+  "name": "@inklang/javascript-workspace",
+  "author": "Mikkel ALMONTE--RINGAUD <contact@vexcited.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
