@@ -3,7 +3,14 @@
   "author": "Mikkel ALMONTE--RINGAUD <contact@vexcited.com>",
   "license": "MIT",
   "private": true,
+  "packageManager": "pnpm@9.15.0",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "build": "turbo build"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.2"
+  }
 }
