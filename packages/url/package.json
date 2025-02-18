@@ -4,7 +4,10 @@
   "description": "Provides support for the url namespace in inklang.",
   "author": "Mikkel ALMONTE--RINGAUD <contact@vexcited.com>",
   "license": "MIT",
-  "repository": "https://github.com/inklang/javascript",
+  "repository": {
+    "directory": "packages/url",
+    "url": "git+https://github.com/inklang/javascript.git"
+  },
   "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
