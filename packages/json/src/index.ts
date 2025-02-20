@@ -4,6 +4,6 @@ export function parse (input: string): Value {
   return JSON.parse(input);
 }
 
-export function get (input: Value, key: string, _: string): Value {
+export function get (input: Value, key: string): Value {
   return input[key];
 }
