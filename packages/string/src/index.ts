@@ -8,3 +8,7 @@ export function stripCtl (input: string): string {
 export function stripOnce (input: string, search: string): string {
   return input.replace(search, "")
 }
+
+export function split (input: string, divider: string): Array<string> {
+  return input.split(divider)
+}
