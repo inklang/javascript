@@ -12,7 +12,31 @@ importers:
         specifier: ^2.4.2
         version: 2.4.2
 
+  packages/bytes:
+    devDependencies:
+      terser:
+        specifier: ^5.39.0
+        version: 5.39.0
+      tsup:
+        specifier: ^8.3.6
+        version: 8.3.6(typescript@5.7.3)
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
+
   packages/http:
+    devDependencies:
+      terser:
+        specifier: ^5.39.0
+        version: 5.39.0
+      tsup:
+        specifier: ^8.3.6
+        version: 8.3.6(typescript@5.7.3)
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
+
+  packages/json:
     devDependencies:
       terser:
         specifier: ^5.39.0
