@@ -1,14 +1,14 @@
-export function stripCtl (input: string): string {
+export const stripCtl = (input: string): string =>
   // `g` for global replacement
   // `u` for unicode mode (`\p`)
   // `p{Cc}` for control characters
-  return input.replace(/\p{Cc}/gu, "")
-}
+  input.replace(/\p{Cc}/gu, "");
 
-export function stripOnce (input: string, search: string): string {
-  return input.replace(search, "")
-}
+export const stripAll = (input: string, search: string): string =>
+  input.replaceAll(search, "");
 
-export function split (input: string, divider: string): Array<string> {
-  return input.split(divider)
-}
+export const split = (input: string, separator: string): Array<string> =>
+  input.split(separator);
+
+export const concat = (a: string, b: string): string =>
+  a + b;

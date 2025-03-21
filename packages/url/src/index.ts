@@ -1,6 +1,2 @@
 export type Url = URL;
-
-export function parse (url: string): Url {
-  return new URL(url);
-}
-
+export const parse = (url: string): Url => new URL(url);
