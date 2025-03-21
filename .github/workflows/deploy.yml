@@ -23,10 +23,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          cache: 'pnpm'
+          cache: "pnpm"
           node-version: 22
-          registry-url: 'https://registry.npmjs.com'
-          cache-dependency-path: 'pnpm-lock.yaml'
+          registry-url: "https://registry.npmjs.com"
+          cache-dependency-path: "pnpm-lock.yaml"
 
       - name: Build everything
         run: |
@@ -43,7 +43,7 @@ jobs:
               cd "$package"
 
               # Bump version dynamically for alpha releases
-              sed -i "s/0.0.0/0.0.0-alpha.${GITHUB_RUN_ID}.${GITHUB_RUN_ATTEMPT}/" "package.json"
+              sed -i "s/0.0.0/0.1.0-${GITHUB_RUN_ID}.${GITHUB_RUN_ATTEMPT}/" "package.json"
 
               npm publish --provenance --access public || echo "Failed to publish $package"
               cd - > /dev/null
