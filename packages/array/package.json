@@ -1,11 +1,11 @@
 {
-  "name": "@inklang/json",
+  "name": "@inklang/array",
   "version": "0.0.0",
-  "description": "Provides support for the json namespace in inklang.",
+  "description": "Provides support for the array namespace in inklang.",
   "author": "Mikkel ALMONTE--RINGAUD <contact@vexcited.com>",
   "license": "MIT",
   "repository": {
-    "directory": "packages/json",
+    "directory": "packages/array",
     "url": "git+https://github.com/inklang/javascript.git"
   },
   "sideEffects": false,
@@ -29,7 +29,6 @@
     "dist"
   ],
   "devDependencies": {
-    "@types/bun": "^1.2.5",
     "terser": "^5.39.0",
     "tsup": "^8.3.6",
     "typescript": "^5.7.3"

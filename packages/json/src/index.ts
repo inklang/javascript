@@ -1,28 +1,13 @@
 export type Value = any;
 
-export function parse (input: string): Value {
-  return JSON.parse(input);
-}
+export const parse = (json: string): Value => JSON.parse(json);
+export const getProperty = (value: Value, property: string): Value => value[property];
 
-export function get (value: Value, key: string): Value {
-  return value[key];
-}
+export const asArray = (v: Value): Array<Value> => v;
+export const asString = (v: Value): string => v;
+export const asBoolean = (v: Value): boolean => v;
 
-export function asArray (value: Value): Array<Value> {
-  return value;
-}
-
-export function asString (value: Value): string {
-  return value;
-}
-
-export function asBoolean (value: Value): boolean {
-  return value;
-}
-
-function asNumber (value: Value): number {
-  return value;
-}
+const asNumber = (v: Value): number => v;
 
 export {
   asNumber as asU64,
