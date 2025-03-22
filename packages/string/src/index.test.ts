@@ -15,6 +15,6 @@ describe("string", () => {
   });
 
   it("concatenates", () => {
-    expect(string.concat("hello", "world")).toEqual("helloworld");
+    expect(string.concat(["hello", "world", "12"])).toEqual("helloworld12");
   });
 });

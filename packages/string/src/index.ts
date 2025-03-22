@@ -10,5 +10,5 @@ export const stripAll = (input: string, search: string): string =>
 export const split = (input: string, separator: string): Array<string> =>
   input.split(separator);
 
-export const concat = (a: string, b: string): string =>
-  a + b;
+export const concat = (segments: Array<string>): string =>
+  segments.join("");
