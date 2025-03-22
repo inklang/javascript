@@ -14,3 +14,11 @@ export {
   asNumber as asF64,
   asNumber as asI64,
 };
+
+export const isDefined = (value: Value): boolean => {
+  return typeof value !== "undefined" && value !== null;
+}
+
+export const isUndefined = (value: Value): value is undefined => {
+  return typeof value === "undefined" || value === null;
+}
